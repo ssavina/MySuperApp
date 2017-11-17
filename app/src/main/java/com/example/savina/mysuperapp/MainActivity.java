@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String a = "10";
-        final Intent intent = new Intent(this, SettingsActivity.class);
+        final Intent intent = new Intent(this, MapsActivity.class);
         intent.putExtra("myString",a);
 
         Button button =  findViewById(R.id.settingsButton);

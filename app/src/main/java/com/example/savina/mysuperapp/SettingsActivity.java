@@ -13,10 +13,6 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        TextView textView = findViewById(R.id.textView);
-        String a = getIntent().getStringExtra("myString");
-
-        textView.setText(a);
 
     }
 }
