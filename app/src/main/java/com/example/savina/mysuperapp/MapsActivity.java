@@ -39,8 +39,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in yourCountry and move the camera
-        LatLng MyCountry = new LatLng(38.392547, 21.828503);
-        mMap.addMarker(new MarkerOptions().position(MyCountry).title("Marker in MyCountry"));
+        LatLng MyCountry = new LatLng(0, 0);
+        
         mMap.moveCamera(CameraUpdateFactory.newLatLng(MyCountry));
+        mMap.setMyLocationEnabled(true);
     }
 }
